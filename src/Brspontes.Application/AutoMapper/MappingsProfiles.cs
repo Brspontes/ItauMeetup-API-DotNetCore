@@ -12,6 +12,7 @@ namespace Brspontes.Application.AutoMapper
         public MappingsProfiles()
         {
             CreateMap<RegisterHeroesCommand, Heroes>();
+            CreateMap<UpdateHeroesCommand, Heroes>();
         }
     }
 }

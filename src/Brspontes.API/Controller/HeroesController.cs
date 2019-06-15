@@ -41,5 +41,20 @@ namespace Brspontes.API.Controller
         {
             return _handler.Get(Id);
         }
+
+        [HttpPut]
+        [Route("heroes/update")] 
+        public ICommandResult Put([FromBody] UpdateHeroesCommand command)
+        {
+            return _handler.Handle(command);
+        }
+
+        [HttpDelete]
+        [Route("heroes/{Id}")]
+        public ICommandResult Delete(string Id)
+        {
+            DeleteHeroCommand command = new DeleteHeroCommand(Id);
+            return _handler.Handle(command);
+        }
     }
 }

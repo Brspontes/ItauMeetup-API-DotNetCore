@@ -28,7 +28,18 @@ namespace Brspontes.Domain.HeroContext.Handlers
 
         public ICommandResult Handle(UpdateHeroesCommand command)
         {
-            throw new NotImplementedException();
+            AddNotifications(command.Notifications);
+            var mapping = _mapper.Map<Heroes>(command);
+            AddNotifications(mapping.Notifications);
+
+            if (Invalid)
+                return new RegisterHeroesCommandResult
+                {
+                    Success = false,
+                    Message = Notifications
+                };
+
+            return _heroesRepository.Update(mapping);
         }
 
         public ICommandResult Handle(RegisterHeroesCommand command)
@@ -49,7 +60,7 @@ namespace Brspontes.Domain.HeroContext.Handlers
 
         public ICommandResult Handle(DeleteHeroCommand command)
         {
-            throw new NotImplementedException();
+            return _heroesRepository.Delete(command);
         }
 
         public IEnumerable<ListHeroesQueryResult> Get()

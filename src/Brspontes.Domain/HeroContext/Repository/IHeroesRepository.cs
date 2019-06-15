@@ -11,7 +11,7 @@ namespace Brspontes.Domain.HeroContext.Repository
     public interface IHeroesRepository
     {
         RegisterHeroesCommandResult Save(Heroes heroes);
-        UpdateHeroesCommandResult Update(UpdateHeroesCommand command);
+        UpdateHeroesCommandResult Update(Heroes command);
         IEnumerable<ListHeroesQueryResult> Get();
         GetHeroQueryResult Get(string Id);
         DeleteHeroesCommandResult Delete(DeleteHeroCommand command);
