@@ -10,34 +10,34 @@ to get all entries use Get without parameters
 
 ### GET {Id}
 
-{
-	"Id" : "274c5475-7bb1-4c5c-aad2-8fcec841d64f"
-}
+{  
+	"Id" : "274c5475-7bb1-4c5c-aad2-8fcec841d64f"  
+}  
 
 ### POST
 
-{
-	"FirstName" : "Peter",
-	"LastName" : "Parker",
-	"Description" : "Poderes de lançar teia!",
-	"SuperHeroName" : "SpiderMan",
- 	"ProfilePicture" : "teste.jpg"
-}
+{  
+	"FirstName" : "Peter",  
+	"LastName" : "Parker",  
+	"Description" : "Poderes de lançar teia!",  
+	"SuperHeroName" : "SpiderMan",  
+ 	"ProfilePicture" : "teste.jpg"  
+}  
 
 ### PUT
-{
- 	"Id": "274c5475-7bb1-4c5c-aad2-8fcec841d64f",
- 	"FirstName" : "Steve",
- 	"LastName" : "Rogers",
- 	"Description" : "Um cara foda",
- 	"SuperHeroName" : "Captain America",
- 	"ProfilePicture" : "Captain.jpg"
-}
+{  
+ 	"Id": "274c5475-7bb1-4c5c-aad2-8fcec841d64f",  
+ 	"FirstName" : "Steve",  
+ 	"LastName" : "Rogers",  
+ 	"Description" : "Um cara foda",  
+ 	"SuperHeroName" : "Captain America",  
+ 	"ProfilePicture" : "Captain.jpg"  
+}  
 
 ### DELETE
-{
-	"Id" : "274c5475-7bb1-4c5c-aad2-8fcec841d64f"
-}
+{  
+	"Id" : "274c5475-7bb1-4c5c-aad2-8fcec841d64f"  
+}  
 
 ## Connection String 
  ItauMetup-API-DotNetCore/src/Brspontes.Infra/MySQLContext/MySQLContexts.cs 
