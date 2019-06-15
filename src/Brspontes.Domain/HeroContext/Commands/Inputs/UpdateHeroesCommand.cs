@@ -12,7 +12,7 @@ namespace Brspontes.Domain.HeroContext.Commands.Inputs
         public string SuperHeroName { get; set; }
         public string ProfilePicture { get; set; }
 
-        public bool Valid()
+        public void Valid()
         {
             AddNotifications(new ValidationContract().Requires()
                 .HasMinLen(FirstName, 3, "FirstName", "FirstName must be at least 3 characters")
@@ -20,8 +20,6 @@ namespace Brspontes.Domain.HeroContext.Commands.Inputs
                 .HasMinLen(Description, 5, "Description", "Description must contain at least 5 characters")
                 .HasMinLen(SuperHeroName, 3, "Name", "Duper Hero Name must be at least 3 characters")
                 .IsNotNullOrEmpty(ProfilePicture, "ProfilePicture", "Required profile photo"));
-
-            return Valid();
         }
     }
 }

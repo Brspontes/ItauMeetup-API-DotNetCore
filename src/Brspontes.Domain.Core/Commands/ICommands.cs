@@ -6,6 +6,6 @@ namespace Brspontes.Domain.Core.Commands
 {
     public interface ICommands
     {
-        bool Valid();
+        void Valid();
     }
 }

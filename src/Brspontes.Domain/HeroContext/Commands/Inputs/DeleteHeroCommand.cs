@@ -9,12 +9,16 @@ namespace Brspontes.Domain.HeroContext.Commands.Inputs
 {
     public class DeleteHeroCommand : Entity, ICommands
     {
-        public bool Valid()
+        public DeleteHeroCommand(Guid id)
+            : base(id)
+        {
+
+        }
+
+        public void Valid()
         {
             AddNotifications(new ValidationContract().Requires()
                 .IsNotNullOrEmpty(Id.ToString(), "Id", "id can not be null"));
-
-            return Valid();
         }
     }
 }

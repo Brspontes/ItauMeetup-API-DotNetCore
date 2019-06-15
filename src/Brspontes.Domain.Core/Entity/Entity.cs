@@ -8,9 +8,9 @@ namespace Brspontes.Domain.Core.Entity
     {
         public Guid Id { get; set; }
 
-        public Entity()
+        public Entity(Guid id)
         {
-            Id = Guid.NewGuid();
+            Id = id;
         }
     }
 }
