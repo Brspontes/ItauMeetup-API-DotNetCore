@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Brspontes.Domain.StoreContext.Commands.Outputs
+namespace Brspontes.Domain.HeroContext.Commands.Outputs
 {
     public class RegisterHeroesCommandResult : ICommandResult
     {

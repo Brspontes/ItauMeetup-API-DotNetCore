@@ -1,12 +1,12 @@
 ﻿using Brspontes.Domain.Core.Commands;
-using Brspontes.Domain.StoreContext.Commands.Inputs;
-using Brspontes.Domain.StoreContext.Repository;
+using Brspontes.Domain.HeroContext.Commands.Inputs;
+using Brspontes.Domain.HeroContext.Repository;
 using FluentValidator;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Brspontes.Domain.StoreContext.Handlers
+namespace Brspontes.Domain.HeroContext.Handlers
 {
     public class HeroesHandler : Notifiable,
         ICommandHandler<RegisterHeroesCommand>,

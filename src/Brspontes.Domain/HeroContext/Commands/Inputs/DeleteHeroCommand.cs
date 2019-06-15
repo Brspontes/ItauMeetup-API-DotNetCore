@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Brspontes.Domain.StoreContext.Commands.Inputs
+namespace Brspontes.Domain.HeroContext.Commands.Inputs
 {
     public class DeleteHeroCommand : Entity, ICommands
     {

@@ -1,7 +1,7 @@
 ﻿using FluentValidator;
 using FluentValidator.Validation;
 
-namespace Brspontes.Domain.StoreContext.ValueObjects
+namespace Brspontes.Domain.HeroContext.ValueObjects
 {
     public class SecretyIdentity : Notifiable
     { 

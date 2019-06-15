@@ -1,9 +1,9 @@
-﻿using Brspontes.Domain.StoreContext.QueriesResults;
+﻿using Brspontes.Domain.HeroContext.QueriesResults;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Brspontes.Domain.StoreContext.Repository
+namespace Brspontes.Domain.HeroContext.Repository
 {
     public interface IHeroesRepository
     {

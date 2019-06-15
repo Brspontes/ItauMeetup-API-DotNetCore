@@ -1,11 +1,11 @@
 ﻿using Brspontes.Domain.Core.Entity;
-using Brspontes.Domain.StoreContext.ValueObjects;
+using Brspontes.Domain.HeroContext.ValueObjects;
 using FluentValidator;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Brspontes.Domain.StoreContext.Entities
+namespace Brspontes.Domain.HeroContext.Entities
 {
     public class Heroes : Entity
     {

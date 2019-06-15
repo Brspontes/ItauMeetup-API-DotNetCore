@@ -2,7 +2,7 @@
 using FluentValidator;
 using FluentValidator.Validation;
 
-namespace Brspontes.Domain.StoreContext.Commands.Inputs
+namespace Brspontes.Domain.HeroContext.Commands.Inputs
 {
     public class UpdateHeroesCommand : Notifiable, ICommands
     {
