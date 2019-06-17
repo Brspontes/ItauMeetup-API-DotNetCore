@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Brspontes.Domain.Core.Commands;
+﻿using Brspontes.Domain.Core.Commands;
 using Brspontes.Domain.HeroContext.Commands.Inputs;
-using Brspontes.Domain.HeroContext.Entities;
 using Brspontes.Domain.HeroContext.Handlers;
 using Brspontes.Domain.HeroContext.QueriesResults;
-using Brspontes.Domain.HeroContext.Repository;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Brspontes.API.Controller
 {
@@ -22,7 +16,7 @@ namespace Brspontes.API.Controller
         }
 
         [HttpPost]
-        [Route("heroes/register")]
+        [Route("heroes")]
         public ICommandResult Post([FromBody] RegisterHeroesCommand command)
         {
             return _handler.Handle(command);
@@ -43,7 +37,7 @@ namespace Brspontes.API.Controller
         }
 
         [HttpPut]
-        [Route("heroes/update")] 
+        [Route("heroes")] 
         public ICommandResult Put([FromBody] UpdateHeroesCommand command)
         {
             return _handler.Handle(command);

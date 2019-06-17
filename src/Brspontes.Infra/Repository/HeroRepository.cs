@@ -40,7 +40,7 @@ namespace Brspontes.Infra.Repository
         {
             return _context.Connection.Query<ListHeroesQueryResult>
                  (
-                     "SELECT ID, FIRSTNAME, LASTNAME, SUPERHERONAME, IMAGE " +
+                     "SELECT ID, FIRSTNAME, LASTNAME, SUPERHERONAME, IMAGE, DESCRIPTION " +
                      "FROM HEROES", new { }
                  ).ToList();
         }
