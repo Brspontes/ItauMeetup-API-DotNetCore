@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Brspontes.Application.AutoMapper;
 using Brspontes.Domain.HeroContext.Handlers;
 using Brspontes.Domain.HeroContext.Repository;
@@ -10,7 +6,6 @@ using Brspontes.Infra.MySQLContext;
 using Brspontes.Infra.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -22,6 +17,7 @@ namespace Brspontes.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddScoped<IHeroesRepository, HeroRepository>();
             services.AddScoped<MySQLContexts, MySQLContexts>();
             services.AddScoped<HeroesHandler, HeroesHandler>();
@@ -45,6 +41,11 @@ namespace Brspontes.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod()
+                                    .AllowAnyOrigin());
 
             app.UseMvc();
             app.UseSwagger();
