@@ -43,4 +43,7 @@ to get all entries use Get without parameters
  ItauMetup-API-DotNetCore/src/Brspontes.Infra/MySQLContext/MySQLContexts.cs 
 
 ### Swagger Documentation
-https://localhost:XXXX/swagger/index.html
+https://localhost:XXXX/swagger/index.html  
+
+### Azure Link  
+https://brspontesapi-meetupitau.azurewebsites.net/swagger/index.html

@@ -25,7 +25,7 @@ namespace Brspontes.Infra.Repository
         {
             _context.Connection.Execute
                (
-                   "DELETE FROM heroes WHERE ID = @ID",
+                   "DELETE FROM Heroes WHERE ID = @ID",
                    new { ID = command.Id.ToString() }
                );
 
@@ -41,7 +41,7 @@ namespace Brspontes.Infra.Repository
             return _context.Connection.Query<ListHeroesQueryResult>
                  (
                      "SELECT ID, FIRSTNAME, LASTNAME, SUPERHERONAME, IMAGE, DESCRIPTION " +
-                     "FROM HEROES", new { }
+                     "FROM Heroes", new { }
                  ).ToList();
         }
 
@@ -50,7 +50,7 @@ namespace Brspontes.Infra.Repository
             return _context.Connection.Query<GetHeroQueryResult>
                  (
                      "SELECT ID, FIRSTNAME, LASTNAME, SUPERHERONAME, DESCRIPTION, IMAGE " +
-                     "FROM HEROES WHERE ID = @ID", new { ID = Id.ToString() }
+                     "FROM Heroes WHERE ID = @ID", new { ID = Id.ToString() }
                  ).FirstOrDefault();
         }
 
@@ -58,7 +58,7 @@ namespace Brspontes.Infra.Repository
         {
             if (_context.Connection.Execute
                              (
-                                 "INSERT INTO heroes " +
+                                 "INSERT INTO Heroes " +
                                  "(Id, FirstName, LastName, SUPERHERONAME, Image, Description)" +
                                  "VALUES (@ID, @FIRSTNAME, @LASTNAME, @SUPERHERONAME, @IMAGE, @DESCRIPTION)",
                                  new
@@ -87,7 +87,7 @@ namespace Brspontes.Infra.Repository
         {
             if (_context.Connection.Execute
                              (
-                                 "UPDATE heroes SET " +
+                                 "UPDATE Heroes SET " +
                                  "FIRSTNAME = @FIRSTNAME, LASTNAME = @LASTNAME, SUPERHERONAME = @SUPERHERONAME, " +
                                  "IMAGE = @IMAGE, DESCRIPTION = @DESCRIPTION WHERE ID = @ID",
                                  new
