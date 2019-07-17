@@ -5,10 +5,8 @@ using Brspontes.Domain.HeroContext.QueriesResults;
 using Brspontes.Domain.HeroContext.Repository;
 using Brspontes.Infra.MySQLContext;
 using Dapper;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Brspontes.Infra.Repository
 {

@@ -1,5 +1,4 @@
 ﻿using FluentValidator;
-using FluentValidator.Validation;
 using System;
 
 namespace Brspontes.Domain.Core.Entity

@@ -6,9 +6,7 @@ using Brspontes.Domain.HeroContext.Entities;
 using Brspontes.Domain.HeroContext.QueriesResults;
 using Brspontes.Domain.HeroContext.Repository;
 using FluentValidator;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Brspontes.Domain.HeroContext.Handlers
 {

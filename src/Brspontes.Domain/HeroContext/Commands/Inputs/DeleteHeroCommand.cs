@@ -1,10 +1,6 @@
 ﻿using Brspontes.Domain.Core.Commands;
-using Brspontes.Domain.Core.Entity;
 using FluentValidator;
 using FluentValidator.Validation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Brspontes.Domain.HeroContext.Commands.Inputs
 {

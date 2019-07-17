@@ -2,9 +2,7 @@
 using Brspontes.Domain.HeroContext.Commands.Outputs;
 using Brspontes.Domain.HeroContext.Entities;
 using Brspontes.Domain.HeroContext.QueriesResults;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Brspontes.Domain.HeroContext.Repository
 {

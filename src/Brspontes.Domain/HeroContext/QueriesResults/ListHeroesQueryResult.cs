@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Brspontes.Domain.HeroContext.QueriesResults
+﻿namespace Brspontes.Domain.HeroContext.QueriesResults
 {
     public class ListHeroesQueryResult
     {

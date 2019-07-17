@@ -2,8 +2,6 @@
 using FluentValidator;
 using FluentValidator.Validation;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Brspontes.Domain.HeroContext.Commands.Inputs
 {
